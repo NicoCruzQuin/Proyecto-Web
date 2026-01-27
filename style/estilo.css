@@ -1,6 +1,5 @@
 :root {
     --color-principal: #0056b3;
-    --color-linea: #3498db;
     --color-oscuro: #1e293b;
     --color-fondo: #f8fafc;
     --color-blanco: #ffffff;
@@ -50,26 +49,18 @@ section {
     box-shadow: var(--sombra);
 }
 
+/* --- CAMBIO: Título SIN ninguna línea --- */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: var(--color-oscuro);
     text-align: center;
+    border: none !important; /* Fuerza a quitar cualquier borde */
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 0;
 }
 
-h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: var(--color-linea);
-    border-radius: 2px;
-}
+/* He borrado la parte de h1::after para que no salga la rayita debajo */
 
 .proyecto {
     border: 1px solid #e2e8f0;
@@ -125,6 +116,7 @@ button:hover {
     background-color: #004494;
 }
 
+/* --- CAMBIO: Iconos más pequeños (30px) --- */
 .redes-container {
     display: flex;
     justify-content: center;
@@ -138,7 +130,7 @@ button:hover {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     transition: 0.3s ease;
-    width: 40px !important;
+    width: 30px !important; /* Reducido de 40px a 30px */
 }
 
 .redes-container img:hover {
