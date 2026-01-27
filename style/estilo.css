@@ -34,6 +34,7 @@ nav a {
     text-transform: uppercase;
     font-size: 14px;
     transition: color 0.3s;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -136,4 +137,26 @@ button:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
 }
