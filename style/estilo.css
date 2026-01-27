@@ -1,9 +1,10 @@
 :root {
-    --color-principal: #0056b3;
-    --color-oscuro: #1e293b;
-    --color-fondo: #f8fafc;
+    --color-principal: #2563eb;
+    --color-secundario: #dbeafe;
+    --color-oscuro: #1e3a8a;
+    --color-fondo: #eff6ff;
     --color-blanco: #ffffff;
-    --sombra: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --sombra: 0 10px 25px -5px rgba(37, 99, 235, 0.15);
 }
 
 * {
@@ -22,8 +23,9 @@ body {
 header {
     background-color: var(--color-blanco);
     padding: 20px 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     text-align: center;
+    border-bottom: 3px solid var(--color-secundario);
 }
 
 nav a {
@@ -33,6 +35,7 @@ nav a {
     margin: 0 15px;
     text-transform: uppercase;
     font-size: 14px;
+    letter-spacing: 0.5px;
     transition: color 0.3s;
 }
 
@@ -47,94 +50,35 @@ section {
     padding: 40px;
     border-radius: 16px;
     box-shadow: var(--sombra);
+    border: 1px solid #e0f2fe;
 }
 
-/* --- CAMBIO: Título SIN ninguna línea --- */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: var(--color-oscuro);
+    color: var(--color-principal);
     text-align: center;
-    border: none !important; /* Fuerza a quitar cualquier borde */
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 15px;
+    border: none !important;
 }
 
-/* He borrado la parte de h1::after para que no salga la rayita debajo */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+}
 
 .proyecto {
-    border: 1px solid #e2e8f0;
+    background-color: #fbfdff;
+    border: 1px solid #bfdbfe;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
-    transition: transform 0.3s;
-}
-
-.proyecto:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-principal);
-}
-
-.icono {
-    width: 35px;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
-    font-family: inherit;
-}
-
-input:focus, textarea:focus {
-    border-color: var(--color-principal);
-    outline: none;
-}
-
-button {
-    background-color: var(--color-principal);
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #004494;
-}
-
-/* --- CAMBIO: Iconos más pequeños (30px) --- */
-.redes-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #f1f5f9;
-}
-
-.redes-container img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: 0.3s ease;
-    width: 30px !important; /* Reducido de 40px a 30px */
-}
-
-.redes-container img:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    transform: scale(1.2);
-}
+    transition: transform 0.3s, box-shadow 0
