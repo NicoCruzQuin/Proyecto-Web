@@ -190,11 +190,6 @@ footer {
     filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.2));
 }
 
-.rss-icono:hover {
-    transform: scale(1.2) rotate(360deg);
-    cursor: pointer;
-}
-
 .rss-texto {
     font-size: 0.8rem !important;
     color: #64748b !important;
