@@ -198,3 +198,12 @@ footer {
     transform: scale(1.1);
     cursor: pointer;
 }
+.enlace-caja {
+    text-decoration: none; 
+    color: inherit;
+    display: block;
+}
+
+.enlace-caja:hover .proyecto {
+    cursor: pointer;
+}
