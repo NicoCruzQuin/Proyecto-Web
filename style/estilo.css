@@ -1,11 +1,11 @@
 :root {
-    --color-principal: #2563eb; 
+    --color-principal: #2563eb;
+    --color-secundario: #dbeafe;
     --color-oscuro: #1e293b;
     --color-fondo: #f8fafc;
     --color-blanco: #ffffff;
     --sombra: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-
 
 * {
     margin: 0;
@@ -24,7 +24,7 @@ header {
     background-color: var(--color-blanco);
     padding: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    position: sticky; 
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -42,13 +42,12 @@ nav a {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 0.5px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: var(--color-principal);
 }
-
 
 section {
     max-width: 850px;
@@ -66,6 +65,12 @@ h1 {
     text-align: center;
 }
 
+.enlace-caja {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .proyecto {
     border: 1px solid #e2e8f0;
     border-radius: 12px;
@@ -75,20 +80,22 @@ h1 {
 }
 
 .proyecto:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
     border-color: var(--color-principal);
+    cursor: pointer;
 }
 
 .icono {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     margin-left: 10px;
     border-radius: 50%;
+    float: right;
 }
 
 form {
-    display: grid; 
+    display: grid;
     gap: 15px;
     margin: 30px 0;
 }
@@ -104,24 +111,24 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: var(--color-principal); 
+    border-color: var(--color-principal);
 }
 
 button {
     background-color: var(--color-principal);
     color: white;
-    padding: 14px;
+    padding: 12px 14px;
     border: none;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    transition: opacity 0.3s;
+    transition: background-color 0.3s, opacity 0.3s;
 }
 
 button:hover {
+    background-color: #1d4ed8;
     opacity: 0.9;
 }
-
 
 .redes-container {
     display: flex;
@@ -136,34 +143,13 @@ button:hover {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     transition: 0.3s ease;
-    width: 30px !important; /* Reducido de 40px a 30px */
+    width: 20px !important;
 }
 
 .redes-container img:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     transform: scale(1.2);
-}
-
-button {
-background-color: #0a59a8;
-color: white;
-border: none;
-padding: 8px 14px;
-cursor: pointer;
-border-radius: 4px;
-}
-
-
-button:hover {
-background-color: #084a8a;
-}
-
-.icono {
-  width: 35px;
-  height: 35px;
-  float: right;
-  margin-right: 10px;
 }
 
 footer {
@@ -198,12 +184,31 @@ footer {
     transform: scale(1.1);
     cursor: pointer;
 }
-.enlace-caja {
-    text-decoration: none; 
-    color: inherit;
-    display: block;
-}
 
-.enlace-caja:hover .proyecto {
-    cursor: pointer;
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px;
+    }
 }
