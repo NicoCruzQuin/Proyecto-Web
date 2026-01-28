@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Portfolio de Nicolás Cruz</title>
+  <link>https://nicocruzquin.github.io/Proyecto-Web/</link>
+  <description>Canal de novedades sobre mi portfolio de ASIR</description>
+  <category>informatica/estudios/portfolio</category>
+  <copyright>1º ASIR - Nicolás Cruz</copyright>
+  <image>
+    <url>https://nicocruzquin.github.io/Proyecto-Web/imagenes/medina.jpg</url>
+    <title>Portfolio de Nicolás Cruz</title>
+    <link>https://nicocruzquin.github.io/Proyecto-Web/</link>
+    <width>30</width>
+    <height>30</height>
+  </image>
+  <language>es-es</language>
+  <lastBuildDate>Tue, 27 Jan 2026 12:00:00 +0100</lastBuildDate>
+  <webMaster>ncruz_iesma@ejemplo.com</webMaster>
+
+  <item>
+    <title>Sobre mí</title>
+    <description>
+      Conoce mi perfil personal, mis orígenes en Azuaga y mi residencia en Córdoba.
+    </description>
+    <link>https://nicocruzquin.github.io/Proyecto-Web/pages/sobremi.html</link>
+    <author>ncruz_iesma@ejemplo.com</author>
+    <category>perfil</category>
+    <pubDate>Tue, 27 Jan 2026 12:00:00 +0100</pubDate>
+  </item>
+
+  <item>
+    <title>Mis Estudios</title>
+    <description>
+      Información sobre mi formación en IES Medina Azahara, IES Bembezar y IES Miguel Durán.
+    </description>
+    <link>https://nicocruzquin.github.io/Proyecto-Web/pages/estudios.html</link>
+    <author>ncruz_iesma@ejemplo.com</author>
+    <category>formacion</category>
+    <pubDate>Tue, 27 Jan 2026 12:00:00 +0100</pubDate>
+  </item>
+</channel>
+</rss>

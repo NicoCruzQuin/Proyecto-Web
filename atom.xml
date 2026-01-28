@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es" xml:base="https://nicocruzquin.github.io/Proyecto-Web/">
+  <id>https://nicocruzquin.github.io/Proyecto-Web/</id>
+  <title>Portfolio de Nicolás Cruz (Atom)</title>
+  <updated>2026-01-27T12:00:00+01:00</updated>
+  <link rel="alternate" href="https://nicocruzquin.github.io/Proyecto-Web/atom.xml"/>
+  <author>
+    <name>Nicolás Cruz</name>
+    <email>ncruz_iesma@ejemplo.com</email>
+  </author>
+  <category term="Portfolio Académico"/>
+  <logo>imagenes/medina.jpg</logo>
+
+  <entry>
+    <id>https://nicocruzquin.github.io/Proyecto-Web/pages/sobremi.html</id>
+    <title>Información Sobre Mí</title>
+    <updated>2026-01-27T12:00:00+01:00</updated>
+    <author>
+      <name>Nicolás Cruz</name>
+      <email>ncruz_iesma@ejemplo.com</email>
+    </author>
+    <summary>
+      Página donde detallo mi biografía, mis gustos por la informática y mis orígenes.
+    </summary>
+    <link rel="alternate" href="https://nicocruzquin.github.io/Proyecto-Web/pages/sobremi.html"/>
+  </entry>
+
+  <entry>
+    <id>https://nicocruzquin.github.io/Proyecto-Web/pages/estudios.html</id>
+    <title>Historial Académico</title>
+    <updated>2026-01-27T12:00:00+01:00</updated>
+    <author>
+      <name>Nicolás Cruz</name>
+      <email>ncruz_iesma@ejemplo.com</email>
+    </author>
+    <summary>
+      Listado de centros donde he estudiado: IES Medina Azahara, Bembezar y Miguel Durán.
+    </summary>
+    <link rel="alternate" href="https://nicocruzquin.github.io/Proyecto-Web/pages/estudios.html"/>
+  </entry>
+</feed>
