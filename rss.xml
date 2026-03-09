@@ -15,7 +15,7 @@
   </image>
   <language>es-es</language>
   <lastBuildDate>Tue, 27 Jan 2026 12:00:00 +0100</lastBuildDate>
-  <webMaster>ncruz_iesma@ejemplo.com</webMaster>
+  <webMaster>crquni_aliesma@iesmedinaazahara.es</webMaster>
 
   <item>
     <title>Sobre mí</title>
@@ -23,7 +23,7 @@
       Conoce mi perfil personal, mis orígenes en Azuaga y mi residencia en Córdoba.
     </description>
     <link>https://nicocruzquin.github.io/Proyecto-Web/pages/sobremi.html</link>
-    <author>ncruz_iesma@ejemplo.com</author>
+    <author>crquni_aliesma@iesmedinaazahara.es</author>
     <category>perfil</category>
     <pubDate>Tue, 27 Jan 2026 12:00:00 +0100</pubDate>
   </item>
@@ -34,7 +34,7 @@
       Información sobre mi formación en IES Medina Azahara, IES Bembezar y IES Miguel Durán.
     </description>
     <link>https://nicocruzquin.github.io/Proyecto-Web/pages/estudios.html</link>
-    <author>ncruz_iesma@ejemplo.com</author>
+    <author>ncrquni_aliesma@iesmedinaazahara.es</author>
     <category>formacion</category>
     <pubDate>Tue, 27 Jan 2026 12:00:00 +0100</pubDate>
   </item>
